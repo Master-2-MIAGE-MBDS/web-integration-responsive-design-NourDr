@@ -1,0 +1,232 @@
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: img1;
+   
+}
+
+.item-c {
+    grid-area: aside1;
+}
+
+.item-d {
+    grid-area: img2;
+
+}
+a{
+float: right;}
+
+.item-e {
+    grid-area: aside2;
+}
+
+.item-f {
+    grid-area: footer;
+}
+
+
+.container1 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40px auto;
+    
+    background-color: gainsboro;
+
+    /*grid-template-columns: 300px 300px 300px 300px;*/
+    flex-direction: row-reverse;
+    grid-template-rows:  auto;
+    grid-template-areas:
+        "header header header header"
+        "img1 . aside1 aside1"
+        "footer footer footer footer"
+
+}
+
+
+.container2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40px auto;
+  
+    background-color: gainsboro;
+
+    /*grid-template-columns: 300px 300px 300px 300px;*/
+    flex-direction: row-reverse;
+    grid-template-rows:  auto;
+    grid-template-areas:
+        "header header header header"
+        "img2 . aside2 aside2"
+        "footer footer footer footer"
+
+}
+
+
+
+h1 {
+    color: white;
+    background-color: rgb(173, 186, 230);
+    margin:2px;
+}
+
+footer {
+    background-color: rgb(173, 186, 230);
+    text-align: center;
+    height: 100%;
+    margin-top: 10%;
+}
+
+head {
+    height: 100%;
+
+}
+
+body {
+    height: 100%;
+
+}
+
+li {
+    display: inline
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(173, 186, 230);
+
+}
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+
+
+.active {
+    background-color: #333;
+}
+
+
+
+@media screen and (max-width: 1024px) 
+{ 
+h2,p,a{text-align: center;}
+   
+    footer {
+        background-color: rgb(173, 186, 230);
+        text-align: center;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .item-a {
+        grid-area: header;
+    }
+    
+    .item-b {
+        grid-area: img1;
+       
+    }
+    
+    .item-c {
+        grid-area: aside1;
+    }
+    
+    .item-d {
+        grid-area: img2;
+    
+    }
+    a{
+    float: right;}
+    
+    .item-e {
+        grid-area: aside2;
+    }
+    
+    .item-f {
+        grid-area: footer;
+    }
+    
+    
+    .container1 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40px auto;
+        
+        background-color: gainsboro;
+    
+        /*grid-template-columns: 300px 300px 300px 300px;*/
+        flex-direction: row-reverse;
+        grid-template-rows:  auto;
+        grid-template-areas:
+            "header header header header"
+            "img1 . aside1 aside1"
+            "footer footer footer footer"
+    
+    }
+    
+    
+    .container2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40px auto;
+      
+        background-color: gainsboro;
+    
+        /*grid-template-columns: 300px 300px 300px 300px;*/
+        flex-direction: row-reverse;
+        grid-template-rows:  auto;
+        grid-template-areas:
+            "header header header header"
+            "img2 . aside2 aside2"
+            "footer footer footer footer"
+    
+    }
+    head {
+        height: 100%;
+    
+    }
+    
+    body {
+        height: 100%;
+    
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(173, 186, 230);
+    
+    }
+    
+    
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+    }
+    
+    
+    
+    .active {
+        background-color: #333;
+    }
+    
+    
+}

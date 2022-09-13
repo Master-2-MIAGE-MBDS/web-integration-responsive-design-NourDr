@@ -1,0 +1,162 @@
+h1 {
+    color: white;
+    background-color: rgb(174, 173, 230);
+    margin: 0%;
+}
+
+section {
+    background-color: grey;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+head {
+    height: 100%;
+
+}
+
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+input {
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+button {
+    color: white;
+    background-color: rgb(174, 173, 230);
+
+    margin-bottom: 10px;
+    margin-top: 20%;
+    padding: 10px;
+    width: 100%;
+
+}
+
+footer {
+    background-color: rgb(174, 173, 230);
+    text-align: center;
+    height: 100%;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: section;
+}
+
+.item-c {
+    grid-area: form;
+}
+
+.item-d {
+    grid-area: footer;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-direction: row-reverse;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "section section section section"
+        "form form form form"
+        "footer footer footer footer";
+}
+
+@media screen and (max-width: 1024px)
+ {
+    
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        border: 2px solid white;
+        border-radius: 50px;
+      
+    }
+
+    head {
+        height: 100%;
+
+    }
+
+    body {
+        height: 100%;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    input {
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    button {
+        color: white;
+        background-color: rgb(174, 173, 230);
+        margin-bottom: 10px;
+        margin-top: 20%;
+        padding: 10px;
+        width: 100%;
+
+    }
+
+    footer {
+        background-color: rgb(174, 173, 230);
+        text-align: center;
+        height: 100%;
+    }
+
+    .item-a {
+        grid-area: header;
+    }
+
+    .item-b {
+        grid-area: section;
+    }
+
+    .item-c {
+        grid-area: form;
+    }
+
+    .item-d {
+        grid-area: footer;
+    }
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        flex-direction: row-reverse;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header"
+            "section section section section"
+            "form form form form"
+            "footer footer footer footer";
+    }
+}
