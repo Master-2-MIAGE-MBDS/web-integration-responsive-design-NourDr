@@ -9,6 +9,8 @@
 
 .item-c {
     grid-area: aside1;
+    text-align: left;
+    margin:0%;
 }
 
 .item-d {
@@ -16,10 +18,14 @@
 
 }
 a{
-float: right;}
+    float: right;
+    padding-right: 0%;
+    margin-bottom: 10px;}
 
 .item-e {
     grid-area: aside2;
+    text-align: left;
+    margin:0%;
 }
 
 .item-f {
@@ -29,8 +35,9 @@ float: right;}
 
 .container1 {
     height: 100%;
+    width: 50%;
     display: grid;
-    grid-template-columns: 40px auto;
+    grid-template-columns: 12% auto;
     
     background-color: gainsboro;
 
@@ -44,25 +51,23 @@ float: right;}
 
 }
 
-
 .container2 {
     height: 100%;
+    WIDTH: 50%;
     display: grid;
-    grid-template-columns: 40px auto;
+    grid-template-columns: 12% auto;
   
     background-color: gainsboro;
 
     /*grid-template-columns: 300px 300px 300px 300px;*/
-    flex-direction: row-reverse;
+    flex-direction:column;
     grid-template-rows:  auto;
     grid-template-areas:
         "header header header header"
-        "img2 . aside2 aside2"
+        "img2 . aside2 aside2 "
         "footer footer footer footer"
-
+    
 }
-
-
 
 h1 {
     color: white;
@@ -84,7 +89,8 @@ head {
 
 body {
     height: 100%;
-
+    margin: 0;
+       
 }
 
 li {
@@ -97,10 +103,14 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: rgb(173, 186, 230);
-
+    
 }
 
+ul img {
+    float: right ;
+    margin: 10px;
 
+}
 
 li a {
     display: block;
@@ -119,9 +129,11 @@ li a {
 
 
 
-@media screen and (max-width: 1024px) 
+@media screen and (max-width: 800px) 
 { 
-h2,p,a{text-align: center;}
+h2,p,a{text-align: center;
+    padding-right: 0%;
+    margin-bottom: 10px;}
    
     footer {
         background-color: rgb(173, 186, 230);
@@ -141,6 +153,8 @@ h2,p,a{text-align: center;}
     
     .item-c {
         grid-area: aside1;
+        text-align: left;
+        margin:0%;
     }
     
     .item-d {
@@ -148,10 +162,14 @@ h2,p,a{text-align: center;}
     
     }
     a{
-    float: right;}
+        float: right;
+        padding-right: 0%;
+        margin-bottom: 10px;}
     
     .item-e {
         grid-area: aside2;
+        text-align: left;
+        margin:0%;
     }
     
     .item-f {
@@ -161,38 +179,56 @@ h2,p,a{text-align: center;}
     
     .container1 {
         height: 100%;
+        width:100%;
         display: grid;
         grid-template-columns: 40px auto;
-        
+       
+       
         background-color: gainsboro;
-    
-        /*grid-template-columns: 300px 300px 300px 300px;*/
+   
         flex-direction: row-reverse;
         grid-template-rows:  auto;
         grid-template-areas:
             "header header header header"
             "img1 . aside1 aside1"
             "footer footer footer footer"
-    
+   
     }
-    
-    
+   
+   
     .container2 {
         height: 100%;
+        width: 100%;
         display: grid;
         grid-template-columns: 40px auto;
-      
+     
         background-color: gainsboro;
-    
-        /*grid-template-columns: 300px 300px 300px 300px;*/
+   
         flex-direction: row-reverse;
         grid-template-rows:  auto;
         grid-template-areas:
             "header header header header"
             "img2 . aside2 aside2"
             "footer footer footer footer"
-    
+   
     }
+
+    
+    
+    
+    h1 {
+        color: white;
+        background-color: rgb(173, 186, 230);
+        margin:2px;
+    }
+    
+    footer {
+        background-color: rgb(173, 186, 230);
+        text-align: center;
+        height: 100%;
+        margin-top: 10%;
+    }
+    
     head {
         height: 100%;
     
@@ -200,18 +236,28 @@ h2,p,a{text-align: center;}
     
     body {
         height: 100%;
-    
+        margin: 0;
+           
     }
+    
+    li {
+        display: inline
+    }
+    
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: rgb(173, 186, 230);
-    
+        
     }
     
+    ul img {
+        float: right ;
+        margin: 10px;
     
+    }
     
     li a {
         display: block;
@@ -227,6 +273,4 @@ h2,p,a{text-align: center;}
     .active {
         background-color: #333;
     }
-    
-    
 }
